@@ -2,9 +2,10 @@ import Bee from 'bee-queue';
 
 // eslint-disable-next-line import/no-named-as-default-member
 import NotificationEmail from '../app/jobs/NotificationEmail';
+import CancelationEmail from '../app/jobs/CancelationEmail';
 import redisConfig from '../config/redis';
 
-const jobs = [NotificationEmail];
+const jobs = [NotificationEmail, CancelationEmail];
 
 class Queue {
   constructor() {

@@ -21,6 +21,12 @@ class Delivery extends Model {
   }
 
   // static associate(models) {
+  //   this.belongsTo(models.Signature, {
+  //     foreignKey: 'signature_id',
+  //     as: 'signature',
+  //   });
+  // }
+  // static associate(models) {
   //   this.belongsTo(models.Avatar, { foreignKey: 'avatar_id', as: 'avatar' });
   // }
 }
